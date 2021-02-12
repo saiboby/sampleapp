@@ -1,9 +1,0 @@
--------------------------------------------------------------------------------
-Test set: in.javahome.myweb.controller.CalculatorTest
--------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.007 sec <<< FAILURE!
-testAdd(in.javahome.myweb.controller.CalculatorTest)  Time elapsed: 0.005 sec  <<< ERROR!
-java.lang.NullPointerException
-	at in.javahome.myweb.controller.Calculator.add(Calculator.java:14)
-	at in.javahome.myweb.controller.CalculatorTest.testAdd(CalculatorTest.java:9)
-
