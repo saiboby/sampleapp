@@ -1,19 +1,14 @@
-version: 0.2
+version: 0.1
 
 phases:
   build:
     commands:
-      - echo Entered the build phase...
       - echo Build started on `date`
-      - mvn clean package -DskipTests=true
+      - mvn test
   post_build:
     commands:
-      - echo Build completed successfully
+      - echo Build completed on `date`
+      - mvn package
 artifacts:
   files:
-    - target/myweb*/*
-  discard-paths: yes
-
-cache:
-  paths:
-    - '/root/.m2/**/*'
+    - target/aws-build-sample-maven-project-0.0.1-SNAPSHOT.jar
