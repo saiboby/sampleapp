@@ -1,0 +1,10 @@
+# below are the commands to create files.
+openssl genrsa -out my.key 2048   (to create private key)
+
+openssl rsa -in my.key -pubout -out my_public.key
+
+openssl req -new -key my.key -out my.csr
+
+openssl req -text -in my.csr -noout -verify
+
+openssl x509 -in my.csr -out my.crt -req -signkey my.key  -days 365
